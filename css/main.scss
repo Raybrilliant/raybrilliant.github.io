@@ -1,0 +1,35 @@
+
+:root {
+    --bs-body-font-family: 'Poppins', sans-serif;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    background-color: #FFAE14;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
+.banner {
+  position: relative;
+  animation: animate 25s infinite;
+  animation-timing-function: linear;
+}
+@keyframes animate{
+  from {Right: -90em}
+  to {Right: 100em}
+}
+
+.image {
+  animation: img-animate 1s ease-in-out;
+}
+@keyframes img-animate {
+  from {scale: 0; Top: -10px;}
+  to {scale:1; Top:0px};
+}
+
+$primary : #130E0B;
+$secondary : #76D6C6;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import "../../node_modules/bootstrap/scss/bootstrap";
